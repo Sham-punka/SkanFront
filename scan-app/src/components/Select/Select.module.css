@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.select {
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.select:focus {
+  border-color: #5970ff;
+  outline: none;
+}
+
+.errorSelect {
+  border-color: red;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

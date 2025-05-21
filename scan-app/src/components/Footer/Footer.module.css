@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #f4f6f8;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #444;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 30px;
+}
+
+.right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.right a {
+  color: #5970ff;
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

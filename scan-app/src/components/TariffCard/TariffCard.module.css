@@ -1,0 +1,102 @@
+.card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🎯 Цвета по типу */
+.beginner {
+  background: linear-gradient(180deg, #ffb64f 0%, #ffcb73 100%);
+}
+
+.pro {
+  background: linear-gradient(180deg, #7ce3e1 0%, #92e0d6 100%);
+}
+
+.business {
+  background: linear-gradient(180deg, #5970ff 0%, #7a91ff 100%);
+}
+
+.current {
+  border: 2px solid white;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.75rem;
+  background: white;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #f3f3f3;
+}
+
+/* 📱 Мобильная адаптация */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .benefits {
+    font-size: 0.85rem;
+  }
+}
